@@ -19,4 +19,7 @@ int main()
      rb=t;
     cout<<"ra="<<ra<<endl;
     cout<<"rb="<<rb<<endl;
+    cout<<"a ="<<a <<endl;
+    cout<<"b ="<<b <<endl;
+    return 0;
 }
