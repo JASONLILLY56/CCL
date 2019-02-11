@@ -16,4 +16,4 @@ int main()
  cout<<"*p="<<*p<<endl;
 cout<<"&i="<<&i<<endl;
 return 0;
-}
+
