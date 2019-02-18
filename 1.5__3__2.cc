@@ -10,7 +10,13 @@ using std::cin;
 using std::endl;
 int Sum(int a[4])
 {
-    return a[0]+a[1]+a[2]+a[3];
+    int sum=0;
+    for(int i=0;i<4;i++)
+    {
+        sum+=a[i];
+    }
+    return sum;
+    //return a[0]+a[1]+a[2]+a[3];
 }
 
 float Average(int a[4])
@@ -50,10 +56,26 @@ int Max(int a[4])
 int main()
 {
     int A[4];
+    cout<<"请输入4个小于100的正整数"<<endl;
+ 
     for (int i=0;i<4;i++)
     {
-        cin>>A[i];
+        int x=0;
+        cin >> x;
+        while(x<=0||x>=100) 
+        {
+        cout << "输入错误"<<endl;
+        cin >> x;
+        }
+        A[i]=x;
+        
+        
+        //cin>>A[i];
         cout << "A["<<i<<"]="<<A[i]<<endl;
+    }
+    for (int i=0;i<4;i++)
+    {
+        cout<< "A["<<i<<"]="<<A[i]<<endl;
     }
     cout<<"sum="<< Sum(A)<<endl;
     cout<<"multip="<<Mul(A)<<endl;
