@@ -8,6 +8,7 @@
 using std::cout;
 using std::cin;
 using std::endl;
+//求和函数
 int Sum(int a[4])
 {
     int sum=0;
@@ -19,17 +20,20 @@ int Sum(int a[4])
     //return a[0]+a[1]+a[2]+a[3];
 }
 
+//求平均值
 float Average(int a[4])
 {
-    return (a[0]+a[1]+a[2]+a[3])/4;
-
+//    return (a[0]+a[1]+a[2]+a[3])/4;
+return Sum(a)/4.0;
 }
 
+//求乘积
 int Mul(int a[4])
 {
     return a[0]*a[1]*a[2]*a[3];
 }
 
+//求最小值
 int Min(int a[4])
 {
     int min=a[0];
@@ -41,6 +45,7 @@ int Min(int a[4])
     return min;
 }
 
+//求最大值
 int Max(int a[4])
 {
     int max=a[0];
