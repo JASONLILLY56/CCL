@@ -1,0 +1,21 @@
+the old testament
+genesis
+genesis 1
+
+			> 不要轻易返回堆空间变量的引用，除非已经有了内存回收的策略
+						
+						int func1();// 执行return语句时是有复制开销的
+						int & func2(); // 返回引用没有复制开销
+						
+						int & ref = func1();
+				
+		
+		4. new/delete vs malloc/free(系统调用)
+				>
+		
+		5. 强制转换
+				static_cast/const_cast/dynamic_cast/reinterpret_cast
+		
+		6. 函数重载
+				> C++支持函数重载的实现原理: 名字改编
+				> 步骤: 当函数名称相同时，根据参数的类型，个数，顺序不同来进行改编1 ineeginning god created the heaven and the earth  
