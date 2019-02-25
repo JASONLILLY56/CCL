@@ -1,0 +1,4 @@
+This is a file of students
+3143418 Jason 138
+3143319 Godeen 134
+3143409 Sunljin 89
