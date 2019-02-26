@@ -1,6 +1,0 @@
-1 zhangshan 78
-2 lisi 98
-3 wangerxiao 67
-4 lisiguang 88
-8 ds 90
-7 wangdao 109
