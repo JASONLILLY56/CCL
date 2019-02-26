@@ -1,0 +1,4 @@
+1	harry	100
+2	stone	0
+3	jason	99
+4	rebecca	88

@@ -5,7 +5,8 @@
 using namespace std;
 struct bookData         //书目结构
 {                       
-    int TP;             //书号
+    long TP;//int TP;             //书号
+    //string bookName;
     char bookName[40];  //书名
     long balance;       //库存量
 };

@@ -9,9 +9,26 @@ using std::cin;
 using std::endl;
  
 const char *fileDat = "booksFile.dat";//账目数据文件名
+
+void show_fileDat()
+{
+    ifstream in_dat_f("booksFile.dat",ios::in);
+    if(!in_dat_f)
+    {
+        cerr<<"File could not be open."<<endl;
+        abort();
+
+    }
+    bookData book;
+    while(in_dat_f){
+        in_dat_f.read((char *)&book,sizeof(book));
+        cout << book.TP << '\t'<<book.bookName << '\t'<<book.balance<<endl;
+    }
+}
  
 int main()
 {
+    show_fileDat();
     char choice;
     while(1)
     {

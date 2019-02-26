@@ -9,7 +9,7 @@ void Append(const char *fileDat)
 {
     char choice;
     bookData book;
-    int key;
+    long key;//int key;
     long num;
     fstream fdat(fileDat,ios::in|ios::out|ios::binary);
     //以读/写方式打开文件，二进制
@@ -42,6 +42,9 @@ void Append(const char *fileDat)
                 cout <<"书号(TP)，书名，数量：\n？";
                 cin >> book.TP;
                 cout << "?";
+                //std::getline (std::cin, book.bookName);
+                //char step;
+                //cin>>noskipws>>step;
                 cin >> book.bookName;
                 cout << "?";
                 cin >> book.balance;
@@ -50,7 +53,7 @@ void Append(const char *fileDat)
                 break;
             };
             //case2
-
+            case '2':
             {
                 fdat.seekg(0,ios::beg);
                 cout << "书号(TP)：\n?";
