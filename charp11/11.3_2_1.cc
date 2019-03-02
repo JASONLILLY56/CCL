@@ -16,15 +16,15 @@ using std::endl;
 int main()
 {
     double x =123.456;
-    cout.width(10);
+    cout.width(20);
     cout.setf(ios::dec,ios::basefield);
     //cout.width(10);
     cout<<setfill('*');
     cout << x <<endl;//1
     
     //cout.setf(ios::right);
-    cout.setf(ios::right);
-    cout.width(15);
+    cout.setf(ios::right);//setflag
+    cout.width(20);
     cout << x <<endl;//2
     
     cout.width(20);
@@ -46,13 +46,19 @@ int main()
     cout<< setfill('*');
     cout.setf(ios::left,ios::right);//每次要从右对齐转换为左对齐的时候需要将
     //使用上面这条语句，并且第一次转换的时候需要重新设置标志位，否则还是有输出
-    //但是第二次就不需要了
+    //但是第二次就不需要了t 
     //cout.setf(ios::left);
     cout<<-x<<endl;//8
     cout.setf(ios::scientific);
     cout.width(20);
     cout<< setfill('*');
     cout<<x<<endl;//9:25
+    
 
+        
+    cout.setf(ios::internal,ios::scientific);
+    cout.width(20);
+    cout<< setfill('*');
+    cout<<x<<endl;
  
 }
