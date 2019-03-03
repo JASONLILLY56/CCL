@@ -14,7 +14,8 @@ protected:
 };
 template<typename T>Array<T>::Array(int s)
 {
-    if(s>1) size = 1;
+    cout<< "Array(int s)"<<endl;
+    if(s>1) size = s;//通过一步步cout进行排查
     else size = 1;
     element = new T[size];
 }
@@ -22,7 +23,7 @@ template<typename T>Array<T>::Array(int s)
 template<typename T>Array<T>::~Array()
 {   
     delete [] element; 
-//    cout << "~Array()"<<endl;
+    cout << "~Array()"<<endl;
 }
 
 template<typename T>const T& Array<T>::Entry(int index) const
